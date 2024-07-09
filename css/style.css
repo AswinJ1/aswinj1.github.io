@@ -2606,3 +2606,153 @@ footer .credits a {
   from, to { border-color: transparent }
   50% { border-color: orange }
 }
+.audio-player {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.controls {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Existing styles */
+.footer {
+  background: rgb(241, 241, 241);
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 2rem;
+}
+
+/* Existing styles */
+
+/* Navbar styling */
+.navbar {
+  margin-bottom: 0;
+  background: none;
+  border: none;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.navbar-nav {
+  margin: 0;
+}
+
+.navbar-nav > li {
+  display: inline-block;
+  float: none;
+  transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+.navbar-nav > li > a {
+  padding: 15px 20px;
+  display: block;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.navbar-brand {
+  padding: 15px 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar-nav > li:hover {
+  transform: translateY(-3px); /* Move item up slightly on hover */
+}
+
+.navbar-nav > li > a:hover {
+  color: #ff4500; /* Change text color on hover */
+}
+
+.navbar-brand:hover {
+  color: #ff4500; /* Change text color on hover */
+}
+
+.input-wrapper {
+  display: block;
+  font-family: monospace;
+  font-size: 125%;
+  width: 50%;
+  position: relative; /* Ensure proper positioning for placeholder */
+}
+
+.input-wrapper input,
+.input-wrapper .placeholder {
+  display: block;
+  appearance: none;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none; /* Remove outline on focus */
+  text-align: center; /* Center text inside input */
+  padding: 10px; /* Add padding for better appearance */
+}
+
+.input-wrapper .placeholder {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center; /* Center text within the placeholder span */
+  pointer-events: none;
+  overflow: hidden; /* Hide overflow text */
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+.input-wrapper input:focus + .placeholder {
+  display: none;
+}
+
+/* Keyframe animation for typing effect */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.input-wrapper .placeholder::before {
+  content: attr(data-text);
+  display: inline-block;
+  width: 0;
+  animation: typing 3s steps(30, end);
+  overflow: hidden;
+  white-space: nowrap;
+}
