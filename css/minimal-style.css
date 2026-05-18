@@ -152,6 +152,15 @@ nav {
   margin-bottom: 6rem;
 }
 
+.hero-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border);
+}
+
 .hero .contact-links {
   margin-top: 2rem;
   display: flex;
@@ -253,4 +262,25 @@ section {
 h2 .material-symbols-rounded {
   font-size: 22px;
   color: var(--fg);
+}
+
+/* Footer */
+footer {
+  padding: 3rem 0;
+  border-top: 1px solid var(--border);
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
 }
