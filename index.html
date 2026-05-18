@@ -10,26 +10,27 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&display=block" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   
   <link href="css/minimal-style.css" rel="stylesheet">
 </head>
 <body>
 
   <div class="container">
-    <nav>
-      <a href="#" class="logo">Aswin J.</a>
+    <nav class="animate-nav">
+      <a href="#" class="logo">Aswin J</a>
       <div class="socials">
-        <a href="https://github.com/AswinJ1" target="_blank"><span class="material-symbols-rounded">code</span> GitHub</a>
-        <a href="https://linkedin.com/in/theaswinj" target="_blank"><span class="material-symbols-rounded">work</span> LinkedIn</a>
+        <a href="https://github.com/AswinJ1" target="_blank"><i class="devicon-github-original colored" style="font-size: 1.1rem;"></i> GitHub</a>
+        <a href="https://linkedin.com/in/theaswinj" target="_blank"><i class="devicon-linkedin-plain colored" style="font-size: 1.1rem;"></i> LinkedIn</a>
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
           <span class="material-symbols-rounded" id="theme-icon">light_mode</span>
         </button>
       </div>
     </nav>
 
-    <header class="hero">
+    <header class="hero animate-hero">
       <img src="img/aswinj.png" alt="Aswin J" class="hero-img">
-      <h1>Software Developer</h1>
+      <h1><span id="typewriter"></span><span class="cursor"></span></h1>
       <p class="lead">
         I'm Aswin, a Full Stack Web Developer based in Kollam, India. I specialize in building and deploying scalable web applications using modern technologies like Next.js and NestJS.
       </p>
@@ -40,29 +41,56 @@
     </header>
 
     <main>
-      <section id="skills">
+      <section id="skills" class="reveal">
         <h2><span class="material-symbols-rounded">build</span> Skills & Technologies</h2>
         <div class="item-group">
           <div class="item">
             <div class="item-meta">Languages</div>
-            <div class="item-content"><p>TypeScript, JavaScript, Python, SQL</p></div>
+            <div class="item-content">
+              <div class="skills-list">
+                <span class="skill-badge"><i class="devicon-typescript-plain colored"></i> TypeScript</span>
+                <span class="skill-badge"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                <span class="skill-badge"><i class="devicon-python-plain colored"></i> Python</span>
+                <span class="skill-badge"><span class="material-symbols-rounded">database</span> SQL</span>
+              </div>
+            </div>
           </div>
           <div class="item">
             <div class="item-meta">Frameworks</div>
-            <div class="item-content"><p>NextJS, NestJS</p></div>
+            <div class="item-content">
+              <div class="skills-list">
+                <span class="skill-badge"><i class="devicon-nextjs-plain colored"></i> Next.js</span>
+                <span class="skill-badge"><i class="devicon-nestjs-plain colored"></i> NestJS</span>
+              </div>
+            </div>
           </div>
           <div class="item">
             <div class="item-meta">Databases</div>
-            <div class="item-content"><p>PostgreSQL, Supabase, NeonDB</p></div>
+            <div class="item-content">
+              <div class="skills-list">
+                <span class="skill-badge"><i class="devicon-postgresql-plain colored"></i> PostgreSQL</span>
+                <span class="skill-badge"><i class="devicon-supabase-plain colored"></i> Supabase</span>
+                <span class="skill-badge"><span class="material-symbols-rounded">database</span> NeonDB</span>
+              </div>
+            </div>
           </div>
           <div class="item">
             <div class="item-meta">Cloud & Tools</div>
-            <div class="item-content"><p>Git, GitHub, Docker, CI/CD (GitHub Actions), Prisma, Azure (VM deployment)</p></div>
+            <div class="item-content">
+              <div class="skills-list">
+                <span class="skill-badge"><i class="devicon-git-plain colored"></i> Git</span>
+                <span class="skill-badge"><i class="devicon-github-original colored"></i> GitHub</span>
+                <span class="skill-badge"><i class="devicon-docker-plain colored"></i> Docker</span>
+                <span class="skill-badge"><i class="devicon-github-original colored"></i> CI/CD</span>
+                <span class="skill-badge"><i class="devicon-prisma-original colored"></i> Prisma</span>
+                <span class="skill-badge"><i class="devicon-azure-plain colored"></i> Azure</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="experience">
+      <section id="experience" class="reveal">
         <h2><span class="material-symbols-rounded">history</span> Experience</h2>
         <div class="item-group">
           <div class="item">
@@ -81,7 +109,7 @@
         </div>
       </section>
 
-      <section id="projects">
+      <section id="projects" class="reveal">
         <h2><span class="material-symbols-rounded">terminal</span> Projects</h2>
         <div class="item-group">
           <div class="item">
@@ -90,7 +118,9 @@
               <h3>CIR Dashboard</h3>
               <p>Responsibility, Timetable & Classroom Management System. Built workflows for work submission, verification, and analytics dashboards to monitor performance.</p>
               <div class="tags">
-                <span>NextJS</span><span>NestJS</span><span>Prisma</span>
+                <span><i class="devicon-nextjs-plain colored"></i> Next.js</span>
+                <span><i class="devicon-nestjs-plain colored"></i> NestJS</span>
+                <span><i class="devicon-prisma-original colored"></i> Prisma</span>
               </div>
             </div>
           </div>
@@ -101,7 +131,9 @@
               <h3>HMS Amrita</h3>
               <p>Hostel Stayback Management System. A role-based web application with multi-level approval workflow and real-time request tracking.</p>
               <div class="tags">
-                <span>Next.js</span><span>Prisma</span><span>Supabase</span>
+                <span><i class="devicon-nextjs-plain colored"></i> Next.js</span>
+                <span><i class="devicon-prisma-original colored"></i> Prisma</span>
+                <span><i class="devicon-supabase-plain colored"></i> Supabase</span>
               </div>
             </div>
           </div>
@@ -112,14 +144,17 @@
               <h3>Corporate Portal & CMS</h3>
               <p>Scalable company website and integrated portal with a Blog CMS and career section for hiring and applicant tracking, with strict RBAC.</p>
               <div class="tags">
-                <span>Nextjs</span><span>zod</span><span>shadcn</span><span>auth.js</span>
+                <span><i class="devicon-nextjs-plain colored"></i> Next.js</span>
+                <span>zod</span>
+                <span>shadcn</span>
+                <span>auth.js</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="education">
+      <section id="education" class="reveal">
         <h2><span class="material-symbols-rounded">school</span> Education</h2>
         <div class="item-group">
           <div class="item">
@@ -142,7 +177,7 @@
     </main>
 
     <footer>
-      <p>&copy; Aswin J. All rights reserved.</p>
+      <p>&copy; Aswin J All rights reserved.</p>
       <p>Kollam, India</p>
     </footer>
   </div>
@@ -171,6 +206,42 @@
         themeIcon.textContent = 'light_mode';
       }
     });
+
+    // Intersection Observer for scroll animations
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.15
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target); // Unobserve after animating once
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach((el) => {
+      observer.observe(el);
+    });
+
+    // Typewriter Effect
+    const roleText = "Software Developer";
+    const typewriterEl = document.getElementById('typewriter');
+    let charIndex = 0;
+
+    function typeWriter() {
+      if (charIndex < roleText.length) {
+        typewriterEl.textContent += roleText.charAt(charIndex);
+        charIndex++;
+        setTimeout(typeWriter, 80); // Speed of typing
+      }
+    }
+    
+    // Start typing after a short delay
+    setTimeout(typeWriter, 500);
   </script>
 </body>
 </html>
