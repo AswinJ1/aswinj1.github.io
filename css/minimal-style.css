@@ -329,6 +329,18 @@ h2 .material-symbols-rounded {
   border-bottom-color: var(--fg);
 }
 
+.btn-link .icon-svg, .btn-link i {
+  transition: transform 0.2s ease;
+}
+
+.btn-link:hover .icon-svg {
+  transform: translate(3px, -3px);
+}
+
+.btn-link:hover i {
+  transform: scale(1.1);
+}
+
 .icon-svg {
   width: 1.1rem;
   height: 1.1rem;
@@ -442,6 +454,18 @@ h2 .material-symbols-rounded {
   opacity: 0.9;
   transform: translateY(-2px);
   border-bottom: none;
+}
+
+.btn-primary .material-symbols-rounded, .btn-coffee .material-symbols-rounded {
+  transition: transform 0.2s ease;
+}
+
+.btn-primary:hover .material-symbols-rounded {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.btn-coffee:hover .material-symbols-rounded {
+  transform: scale(1.1) rotate(5deg);
 }
 
 /* Footer */
