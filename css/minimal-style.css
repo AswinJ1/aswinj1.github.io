@@ -307,6 +307,143 @@ h2 .material-symbols-rounded {
   color: var(--fg);
 }
 
+/* Project Links */
+.project-links {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+.btn-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--fg);
+  border-bottom: 1px solid transparent;
+  transition: opacity 0.2s, border-bottom-color 0.2s;
+}
+
+.btn-link:hover {
+  opacity: 0.8;
+  border-bottom-color: var(--fg);
+}
+
+.icon-svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+/* Accordion Services */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.accordion-item {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--bg);
+}
+
+.accordion-header {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 1rem 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: var(--fg);
+  font-size: 1rem;
+  font-family: var(--font-sans);
+}
+
+.accordion-title {
+  font-weight: 500;
+}
+
+.accordion-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  color: var(--fg);
+  transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+
+.accordion-item.active .accordion-content {
+  grid-template-rows: 1fr;
+}
+
+.accordion-inner {
+  overflow: hidden;
+  padding: 0 1.2rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.accordion-item.active .accordion-inner {
+  padding-bottom: 1rem;
+}
+
+/* Contact Section */
+.contact-content p {
+  margin-bottom: 1.5rem;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn-primary, .btn-coffee {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: transform 0.2s, opacity 0.2s;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--fg);
+  color: var(--bg);
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  border-bottom: none;
+}
+
+.btn-coffee {
+  background-color: #FFDD00;
+  color: #000000;
+}
+
+.btn-coffee:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  border-bottom: none;
+}
+
 /* Footer */
 footer {
   padding: 3rem 0;
